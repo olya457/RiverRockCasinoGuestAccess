@@ -117,7 +117,7 @@ export function MapScreen({savedPlaceIds, focusPlaceId, onToggleSave}: Props): R
     <ScreenScroll>
       <View style={styles.header}>
         <View>
-          <Text style={[styles.title, compact && styles.titleCompact]}>Interactive Map</Text>
+          <Text style={[styles.title, compact && styles.titleCompact]}>Map</Text>
           <Text style={styles.subtitle}>Richmond, British Columbia</Text>
         </View>
         <View style={styles.layers}>

@@ -1,6 +1,5 @@
 export const images = {
   splashBackground: require('./assets/splash-background.png'),
-  logo: require('./assets/river-rock-logo.png'),
   food: {
     ribeye: require('./assets/food-grilled-ribeye.png'),
     salmon: require('./assets/food-atlantic-salmon.png'),
