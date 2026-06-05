@@ -31,5 +31,26 @@ target 'RiverRockCasinoGuestAccess' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    fmt_target = installer.pods_project.targets.find { |target| target.name == 'fmt' }
+    if fmt_target
+      fmt_target.build_configurations.each do |configuration|
+        configuration.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+      end
+    end
+
+    Dir.glob(File.join(installer.sandbox.root.to_s, 'Target Support Files', 'fmt', 'fmt.*.xcconfig')).each do |path|
+      contents = File.read(path)
+      patched_contents = contents.gsub(/^CLANG_CXX_LANGUAGE_STANDARD = .+$/, 'CLANG_CXX_LANGUAGE_STANDARD = c++17')
+      File.write(path, patched_contents) if patched_contents != contents
+    end
+
+    fmt_header = File.join(installer.sandbox.root.to_s, 'fmt', 'include', 'fmt', 'base.h')
+    if File.exist?(fmt_header)
+      File.chmod(0644, fmt_header) unless File.writable?(fmt_header)
+      contents = File.read(fmt_header)
+      patched_contents = contents.gsub('#  define FMT_USE_CONSTEVAL 1', '#  define FMT_USE_CONSTEVAL 0')
+      File.write(fmt_header, patched_contents) if patched_contents != contents
+    end
   end
 end
