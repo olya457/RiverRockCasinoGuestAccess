@@ -1,4 +1,4 @@
-package com.riverrock.casinoguest.access
+package com.riverrock.guest.access
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

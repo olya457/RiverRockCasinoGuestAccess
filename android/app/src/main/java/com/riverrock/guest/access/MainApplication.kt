@@ -1,4 +1,4 @@
-package com.riverrock.casinoguest.access
+package com.riverrock.guest.access
 
 import android.app.Application
 import com.facebook.react.PackageList
