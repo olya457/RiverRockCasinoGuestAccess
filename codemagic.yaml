@@ -10,7 +10,7 @@ workflows:
         distribution_type: app_store
         bundle_identifier: com.vefujasertygcij.vergilohergyg
       vars:
-        APP_STORE_APPLE_ID: 6756238326
+        APP_STORE_APPLE_ID: 6778341303
         BUNDLE_ID: 'com.vefujasertygcij.vergilohergyg'
         XCODE_WORKSPACE: 'RiverRockCasinoGuestAccess.xcworkspace'
         XCODE_SCHEME: 'RiverRockCasinoGuestAccess'
