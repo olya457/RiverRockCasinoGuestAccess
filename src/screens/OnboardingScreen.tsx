@@ -18,35 +18,35 @@ type Props = {
 
 const pages = [
   {
-    tag: 'IMPORTANT NOTICE',
-    icon: '❕',
-    title: 'DEMO Application',
-    eyebrow: 'FOR SHOWCASE PURPOSES ONLY',
-    body: 'This is a demonstration application created solely to showcase the guest journey and interface concepts. It is not connected to any real hotel system and is not intended for actual hotel usage.',
+    tag: 'WELCOME',
+    icon: '🛎️',
+    title: 'River Rock Guest Access',
+    eyebrow: 'YOUR STAY, SIMPLIFIED',
+    body: 'Manage dining, guest services, room comfort, and local recommendations from one polished guest companion.',
   },
   {
-    tag: 'FEATURE 1',
+    tag: 'DINING',
     icon: '🍽️',
     title: 'Room Service',
     eyebrow: 'CULINARY EXCELLENCE DELIVERED',
     body: 'Explore curated signature entrees, fresh light options, and desserts. Add items to your cart and enjoy in-room dining at your leisure.',
   },
   {
-    tag: 'FEATURE 2 & 3',
+    tag: 'GUEST SERVICES',
     icon: '🔔',
     title: 'Guest Requests',
     eyebrow: 'PERSONALIZED SERVICE, ANYTIME',
     body: 'Request housekeeping, amenities, transportation, concierge services, and more. Track every request from submission to completion.',
   },
   {
-    tag: 'FEATURE 4',
+    tag: 'COMFORT',
     icon: '🌡️',
     title: 'Room Climate',
     eyebrow: 'YOUR COMFORT, PERFECTLY CALIBRATED',
     body: 'Fine-tune your room temperature, select cooling or heating mode, adjust fan speed, and enable sleep mode through an elegant control panel.',
   },
   {
-    tag: 'FEATURES 5 & 6',
+    tag: 'CITY GUIDE',
     icon: '📍',
     title: 'Richmond City Guide',
     eyebrow: 'DISCOVER THE DESTINATION',
@@ -132,7 +132,7 @@ export function OnboardingScreen({onComplete}: Props): React.JSX.Element {
           ))}
         </View>
         <PrimaryButton
-          label={last ? 'Enter the Experience ›' : 'Continue ›'}
+          label={last ? 'Get Started ›' : 'Continue ›'}
           onPress={next}
         />
       </View>

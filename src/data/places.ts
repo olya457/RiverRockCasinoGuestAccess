@@ -175,7 +175,7 @@ export const places: Place[] = [
     distance: '6.0 km',
     image: images.places.britannia,
     description:
-      "This well-preserved waterfront heritage site showcases Richmond's multicultural fishing history. The area features restored buildings, historic homes, boatyards, exhibits, and guided tours that provide insight into the lives of early fishing communities along the Fraser River.",
+      "This well-preserved waterfront heritage site highlights Richmond's multicultural fishing history. The area features restored buildings, historic homes, boatyards, exhibits, and guided tours that provide insight into the lives of early fishing communities along the Fraser River.",
   },
   {
     id: 'richmond-olympic-oval',

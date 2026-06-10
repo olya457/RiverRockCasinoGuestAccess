@@ -114,7 +114,7 @@ export function ClimateScreen(): React.JSX.Element {
   return (
     <ScreenScroll>
       <Text style={styles.title}>Room Climate</Text>
-      <Text style={styles.subtitle}>Demo Room · Floor 12</Text>
+      <Text style={styles.subtitle}>Room 1204 · Floor 12</Text>
 
       <View style={[styles.heroCard, compact && styles.heroCardCompact, {borderColor: active ? accent : colors.line}, inactive && styles.inactive]}>
         <View style={styles.heroTop}>
